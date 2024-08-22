@@ -80,8 +80,7 @@ async function monitor(_0x23c2e5) {
 }
 (async () => {
   const _0x2634e5 = process.env.repl;
-  const _5e4362x0 = process.env.repl2;
-  monitor(_0x2634e5, _5e4362x0);
+  monitor(_0x2634e5);
 })();
 setTimeout(() => {
   const _0x3f99b3 = _0x45937c => {
