@@ -31,8 +31,8 @@ async function monitor(_0x23c2e5) {
     });
     const _0x5cfc1e = await _0x2a95d9.newPage();
     await _0x5cfc1e.setViewport({
-      'width': 2500,
-      'height': 3500,
+      'width': 0,
+      'height': 300,
       'deviceScaleFactor': 6,
       'isMobile': true,
       'hasTouch': true,
