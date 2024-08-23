@@ -36,7 +36,7 @@ async function monitor(_0x23c2e5) {
       'deviceScaleFactor': 6,
       'isMobile': true,
       'hasTouch': true,
-      'landscape': false
+      'portrait': true
     });
     async function _0x41f41d() {
       try {
