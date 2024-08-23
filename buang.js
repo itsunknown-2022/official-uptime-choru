@@ -29,15 +29,26 @@ async function monitor(_0x23c2e5) {
       'ignoreHTTPSErrors': true,
       'args': ["--ignore-certificate-errors", "--disable-gpu", "--disable-software-rasterizer", "--disable-dev-shm-usage", "--no-sandbox", "--proxy-server=127.0.0.1:" + _0x1a712d]
     });
-    const _0x5cfc1e = await _0x2a95d9.newPage();
-    await _0x5cfc1e.setViewport({
-      'width': 0,
-      'height': 0,
-      'deviceScaleFactor': 0,
-      'isMobile': true,
-      'hasTouch': true,
-      'portrait': true
-    });
+    const puppeteer = require('puppeteer');
+
+(async () => {
+  const browser = await puppeteer.launch({
+defaultViewport: null
+});
+  const page = await browser.newPage();
+
+  await page.setViewport({
+    width: 0,
+    height: 0,
+    deviceScaleFactor: 3,
+    isMobile: true,
+    hasTouch: true
+  });
+
+  // Other code here
+
+  await browser.close();
+})();
     async function _0x41f41d() {
       try {
         await _0x5cfc1e.goto("https://replit.com/login", {
