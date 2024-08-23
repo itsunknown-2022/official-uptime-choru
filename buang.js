@@ -33,9 +33,10 @@ async function monitor(_0x23c2e5) {
     await _0x5cfc1e.setViewport({
       'width': 2500,
       'height': 3500,
-      'deviceScaleFactor': 3,
+      'deviceScaleFactor': 6,
       'isMobile': true,
-      'hasTouch': true
+      'hasTouch': true,
+      'landscape': false
     });
     async function _0x41f41d() {
       try {
