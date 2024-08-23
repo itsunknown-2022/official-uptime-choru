@@ -29,7 +29,7 @@ async function monitor(_0x23c2e5) {
       'ignoreHTTPSErrors': true,
       'args': ["--ignore-certificate-errors", "--disable-gpu", "--disable-software-rasterizer", "--disable-dev-shm-usage", "--no-sandbox", "--proxy-server=127.0.0.1:" + _0x1a712d]
     });
-    const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer');
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -40,7 +40,6 @@ defaultViewport: null
   await page.setViewport({
     width: 0,
     height: 0,
-    deviceScaleFactor: 3,
     isMobile: true,
     hasTouch: true
   });
